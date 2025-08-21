@@ -8,11 +8,11 @@
     <form method="POST" action="{{ route('register') }}" class="space-y-8">
         @csrf
 
-        <!-- Name -->
+                <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Nom complet')" class="text-slate-700 font-medium" />
             <x-text-input id="name"
-                class="block mt-1 w-full px-3 py-2 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
+                class="block mt-2 w-full px-4 py-3 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
                 type="text"
                 name="name"
                 :value="old('name')"
@@ -27,7 +27,7 @@
         <div>
             <x-input-label for="email" :value="__('Email')" class="text-slate-700 font-medium" />
             <x-text-input id="email"
-                class="block mt-1 w-full px-3 py-2 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
+                class="block mt-2 w-full px-4 py-3 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
                 type="email"
                 name="email"
                 :value="old('email')"
@@ -41,7 +41,7 @@
         <div>
             <x-input-label for="password" :value="__('Mot de passe')" class="text-slate-700 font-medium" />
             <x-text-input id="password"
-                class="block mt-1 w-full px-3 py-2 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
+                class="block mt-2 w-full px-4 py-3 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
                 type="password"
                 name="password"
                 required
@@ -54,7 +54,7 @@
         <div>
             <x-input-label for="password_confirmation" :value="__('Confirmer le mot de passe')" class="text-slate-700 font-medium" />
             <x-text-input id="password_confirmation"
-                class="block mt-1 w-full px-3 py-2 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
+                class="block mt-2 w-full px-4 py-3 border border-amber-200 rounded-lg shadow-sm placeholder-slate-400 focus:border-amber-500 focus:ring-amber-500 focus:ring-1 bg-white/50"
                 type="password"
                 name="password_confirmation"
                 required
@@ -66,7 +66,7 @@
         <!-- Actions -->
         <div class="space-y-4">
             <button type="submit"
-                class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-semibold text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors">
+                class="w-full flex justify-center py-4 px-4 border border-transparent rounded-lg shadow-sm text-sm font-semibold text-white bg-amber-600 hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-colors">
                 Créer mon compte
             </button>
 

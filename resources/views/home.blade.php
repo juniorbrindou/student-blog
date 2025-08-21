@@ -49,7 +49,15 @@
                             </a>
                         @endguest
                         @auth
-                            <a href="/admin" class="inline-flex items-center justify-center rounded-md bg-amber-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-amber-700">
+                            <a href="{{ route('posts.create') }}" class="inline-flex items-center justify-center rounded-md bg-amber-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-amber-700">
+                                Écrire un article
+                            </a>
+                            <a href="{{ route('posts.index') }}" class="inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-semibold text-amber-700 ring-1 ring-inset ring-amber-200 hover:bg-amber-50">
+                                Voir tous les articles
+                            </a>
+                        @endauth
+                        @auth
+                            <a href="/admin" class="inline-flex items-center justify-center rounded-md bg-rose-600 px-5 py-3 text-base font-semibold text-white shadow-sm hover:bg-rose-700">
                                 Ouvrir l'admin
                             </a>
                         @endauth
