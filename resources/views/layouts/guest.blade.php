@@ -48,7 +48,7 @@
                     <a href="{{ route('login') }}" class="px-4 py-2 text-sm font-medium text-slate-700 hover:text-amber-700 hover:bg-amber-50/50 rounded-lg transition-all duration-200">
                         Se connecter
                     </a>
-                    <a href="{{ route('register') }}" class="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
+                    <a href="{{ route('register') }}" class="px-4 py-2 text-sm font-semibold text-white bg-gradient-to-r bg-amber-600 bg-amber-700 hover:from-amber-700 hover:to-amber-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
                         S'inscrire
                     </a>
                 </div>
