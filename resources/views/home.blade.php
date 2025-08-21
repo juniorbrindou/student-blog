@@ -87,30 +87,30 @@
                 <div class="rounded-xl border border-amber-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div class="w-10 h-10 rounded-lg bg-amber-100 text-amber-700 flex items-center justify-center">
                         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3.75h9m-9 3.75h6M3.75 6A2.25 2.25 0 016 3.75h12A2.25 2.25 0 0120.75 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6z"/></svg>
-+                    </div>
-+                    <h3 class="mt-4 text-lg font-semibold">Écris et publie</h3>
-+                    <p class="mt-2 text-slate-600">Crée des articles en toute simplicité avec une interface claire et moderne.</p>
-+                </div>
-+                <div class="rounded-xl border border-rose-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-+                    <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center">
-+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3.75h9m-9 3.75h6M3.75 6A2.25 2.25 0 016 3.75h12A2.25 2.25 0 0120.75 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6z"/></svg>
-+                    </div>
-+                    <h3 class="mt-4 text-lg font-semibold">Admin puissant</h3>
-+                    <p class="mt-2 text-slate-600">Pilote tout depuis Filament : utilisateurs, contenus, médias…</p>
-+                </div>
-+                <div class="rounded-xl border border-fuchsia-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-+                    <div class="w-10 h-10 rounded-lg bg-fuchsia-100 text-fuchsia-700 flex items-center justify-center">
-+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l3 3"/></svg>
-+                    </div>
-+                    <h3 class="mt-4 text-lg font-semibold">Rapide & moderne</h3>
-+                    <p class="mt-2 text-slate-600">Propulsé par Laravel, Vite et Tailwind pour des performances au top.</p>
-+                </div>
-+            </div>
-+        </div>
-+    </section>
-+
-+    <footer class="py-8 text-center text-sm text-slate-500">
-+        © {{ date('Y') }} Student Blog. Fait avec Laravel & Filament.
-+    </footer>
-+</body>
-+</html>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold">Écris et publie</h3>
+                    <p class="mt-2 text-slate-600">Crée des articles en toute simplicité avec une interface claire et moderne.</p>
+                </div>
+                <div class="rounded-xl border border-rose-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-rose-100 text-rose-700 flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.5 8.25h9m-9 3.75h9m-9 3.75h6M3.75 6A2.25 2.25 0 016 3.75h12A2.25 2.25 0 0120.75 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6z"/></svg>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold">Admin puissant</h3>
+                    <p class="mt-2 text-slate-600">Pilote tout depuis Filament : utilisateurs, contenus, médias…</p>
+                </div>
+                <div class="rounded-xl border border-fuchsia-100 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="w-10 h-10 rounded-lg bg-fuchsia-100 text-fuchsia-700 flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l3 3"/></svg>
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold">Rapide & moderne</h3>
+                    <p class="mt-2 text-slate-600">Propulsé par Laravel, Vite et Tailwind pour des performances au top.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 text-center text-sm text-slate-500">
+        © {{ date('Y') }} Student Blog. Fait avec Laravel & Filament.
+    </footer>
+</body>
+</html>
