@@ -43,7 +43,7 @@ class PostController extends Controller
 
         $validated['user_id'] = Auth::id();
         $validated['slug'] = Str::slug($validated['title']);
-        
+
         if ($validated['is_published'] ?? false) {
             $validated['published_at'] = now();
         }
@@ -97,7 +97,7 @@ class PostController extends Controller
         ]);
 
         $validated['slug'] = Str::slug($validated['title']);
-        
+
         if ($validated['is_published'] ?? false) {
             $validated['published_at'] = $validated['published_at'] ?? now();
         } else {

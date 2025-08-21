@@ -10,7 +10,6 @@ Route::get('/', function () {
 
 // Routes publiques pour les posts
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 // Routes protégées pour les posts (nécessitent une authentification)
 Route::middleware('auth')->group(function () {
@@ -20,6 +19,9 @@ Route::middleware('auth')->group(function () {
     Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
 });
+
+// Route publique pour afficher un post (doit être après les routes spécifiques)
+Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

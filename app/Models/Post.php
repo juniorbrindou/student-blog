@@ -27,6 +27,11 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function getAuthorNameAttribute(): string
+    {
+        return $this->user ? $this->user->name : 'Utilisateur supprimé';
+    }
+
     public function getRouteKeyName()
     {
         return 'slug';

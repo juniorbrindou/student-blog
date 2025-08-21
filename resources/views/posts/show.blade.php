@@ -3,10 +3,10 @@
 @section('content')
 <div class="min-h-screen bg-gradient-to-br from-amber-50 to-rose-50 py-8">
     <div class="max-w-4xl mx-auto px-6">
-        
+
         <!-- Navigation -->
         <div class="mb-8">
-            <a href="{{ route('posts.index') }}" 
+            <a href="{{ route('posts.index') }}"
                class="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
@@ -17,33 +17,33 @@
 
         <!-- Article -->
         <article class="bg-white/70 backdrop-blur-sm rounded-xl shadow-sm border border-white/50 p-8">
-            
+
             <!-- En-tête de l'article -->
             <header class="mb-8 pb-6 border-b border-slate-200">
                 <h1 class="text-4xl font-bold text-slate-900 mb-4">{{ $post->title }}</h1>
-                
+
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-4 text-sm text-slate-600">
-                        <span>Par <strong class="text-slate-900">{{ $post->user->name }}</strong></span>
+                        <span>Par <strong class="text-slate-900">{{ $post->author_name }}</strong></span>
                         <span>•</span>
                         <span>{{ $post->published_at ? $post->published_at->format('d M Y à H:i') : 'Brouillon' }}</span>
                     </div>
-                    
+
                     @auth
                     @if($post->user_id === auth()->id())
                     <div class="flex items-center space-x-2">
-                        <a href="{{ route('posts.edit', $post) }}" 
+                        <a href="{{ route('posts.edit', $post) }}"
                            class="inline-flex items-center px-3 py-1.5 bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium rounded-lg text-sm transition-colors">
                             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
                             </svg>
                             Modifier
                         </a>
-                        
+
                         <form method="POST" action="{{ route('posts.destroy', $post) }}" class="inline">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" 
+                            <button type="submit"
                                     onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet article ?')"
                                     class="inline-flex items-center px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 font-medium rounded-lg text-sm transition-colors">
                                 <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

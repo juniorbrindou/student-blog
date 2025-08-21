@@ -9,9 +9,9 @@
                 <h1 class="text-3xl font-bold text-slate-900">Articles du Blog</h1>
                 <p class="text-slate-600 mt-2">Découvrez les derniers articles de la communauté étudiante</p>
             </div>
-            
+
             @auth
-            <a href="{{ route('posts.create') }}" 
+            <a href="{{ route('posts.create') }}"
                class="inline-flex items-center px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-md transition-colors">
                 <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
@@ -32,19 +32,19 @@
                                 {{ $post->title }}
                             </a>
                         </h2>
-                        
+
                         <div class="text-sm text-slate-500 mb-3 flex items-center space-x-4">
-                            <span>Par {{ $post->user->name }}</span>
+                            <span>Par {{ $post->author_name }}</span>
                             <span>•</span>
                             <span>{{ $post->published_at->format('d M Y') }}</span>
                         </div>
-                        
+
                         <p class="text-slate-700 leading-relaxed">
                             {{ Str::limit(strip_tags($post->content), 200) }}
                         </p>
-                        
+
                         <div class="mt-4">
-                            <a href="{{ route('posts.show', $post) }}" 
+                            <a href="{{ route('posts.show', $post) }}"
                                class="inline-flex items-center text-amber-600 hover:text-amber-700 font-medium">
                                 Lire la suite
                                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,15 +62,15 @@
                 </svg>
                 <h3 class="text-lg font-medium text-slate-900 mb-2">Aucun article pour le moment</h3>
                 <p class="text-slate-600 mb-6">Soyez le premier à partager vos idées avec la communauté !</p>
-                
+
                 @auth
-                <a href="{{ route('posts.create') }}" 
+                <a href="{{ route('posts.create') }}"
                    class="inline-flex items-center px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-md transition-colors">
                     Écrire un article
                 </a>
                 @else
                 <div class="space-x-4">
-                    <a href="{{ route('login') }}" 
+                    <a href="{{ route('login') }}"
                        class="inline-flex items-center px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-lg shadow-md transition-colors">
                         Se connecter pour écrire
                     </a>
